@@ -1,15 +1,15 @@
-name: Build RM2100 R2100
+name: Build RM2100
 
 on: 
   release:
     types: [published]
-#  push:
+  push:
 #    tags:
 #    - 'v*'
-  #  branches: 
-  #    - master
-  #schedule:
-    #- cron: 0 17 * * 4
+    branches: 
+      - master
+  schedule:
+    - cron: 5 12 * * *
 #  watch:
 #    types: [started]
 
